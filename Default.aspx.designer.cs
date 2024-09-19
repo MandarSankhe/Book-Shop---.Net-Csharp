@@ -11,7 +11,7 @@ namespace Mandar_Sankhe_BSS9_277
 {
 
 
-    public partial class test
+    public partial class Default1
     {
 
         /// <summary>

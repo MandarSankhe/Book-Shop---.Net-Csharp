@@ -4,7 +4,8 @@
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
-    <title>Your Shopping Cart</title>
+    <title>Welcome to BookStore</title>
+
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/site.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
@@ -18,10 +19,6 @@
                 <div class="col-md-8">
                     <asp:ListBox ID="lstCart" runat="server" CssClass="form-control" Height="150px"></asp:ListBox>
                 </div>
-                <div class="col-md-4">
-                    <asp:Button ID="RemoveItemButton" OnClick="btnRemove_Click" runat="server" Text="Remove Item" CssClass="btn btn-danger mb-2 btn-block" />
-                    <asp:Button ID="EmptyCartButton" OnClick="btnEmpty_Click" runat="server" Text="Empty Cart" CssClass="btn btn-warning mb-2 btn-block" />
-                </div>
             </div>
             <div class="row">
                 <%-- row 2 --%>
@@ -34,8 +31,7 @@
                     <div class="form-group">
                         <%-- buttons --%>
                         <div class="col-sm-12">
-                            <asp:Button ID="btnContinue" PostBackUrl="~/Product.aspx" runat="server" Text="Continue Shopping" CssClass="btn btn-primary" />
-                            <asp:Button ID="btnCheckOut" OnClick="btnCheckOut_Click" runat="server" Text="Check Out" CssClass="btn btn-success" />
+                            <asp:Button ID="btnContinue" PostBackUrl="~/Product.aspx" runat="server" Text="Check our Products" CssClass="btn btn-primary" />
                         </div>
                     </div>
                 </div>
@@ -43,6 +39,5 @@
             <%-- end of row 2 --%>
         </div>
     </form>
-
 </body>
 </html>

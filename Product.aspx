@@ -50,7 +50,7 @@
                     </div>
                     <div class="col-sm-4">
                         <%-- product image column --%>
-                        <asp:Image ID="imgBook" runat="server" />
+                        <asp:Image ID="imgBook" CssClass="bookImage" runat="server" />
                     </div>
                 </div>
                 <%-- end of row 1 --%>

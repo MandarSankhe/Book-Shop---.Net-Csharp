@@ -124,6 +124,10 @@ a {
         text-decoration: underline;
     }
 
+.bookImage {
+    height: 50vh;
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .container {
