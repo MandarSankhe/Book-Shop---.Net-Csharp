@@ -1,0 +1,140 @@
+﻿/* General styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2, h4 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form-text.text-danger {
+    color: #dc3545;
+    font-size: 0.9rem;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #d39e00;
+    }
+
+/* Checkbox and Radio styles */
+.form-check-input {
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+.form-check-label {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Additional styles */
+small.form-text {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+/* Custom link styles */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .btn-block {
+        margin-bottom: 10px;
+    }
+
+    .mt-4 {
+        margin-top: 1.5rem;
+    }
+}
