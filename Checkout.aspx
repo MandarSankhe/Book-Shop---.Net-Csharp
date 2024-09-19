@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Checkout.aspx.cs" Inherits="Mandar_Sankhe_BSS9_277.Cart" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Checkout.aspx.cs" Inherits="Mandar_Sankhe_BSS9_277.Checkout" %>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Mandar_Sankhe_BSS9_277
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Cart : System.Web.UI.Page
     {
         //Create variable to hold cart address in session
         private CartItemList cart;
@@ -71,14 +71,6 @@ namespace Mandar_Sankhe_BSS9_277
 
         }
 
-        //6- will continue working on it later
-        protected void btnCheckOut_Click(object sender, EventArgs e)
-        {
-            lblMessage.Text =
-                "Sorry, that function hasn't been " +
-                "implemented yet.";
-
-        }
     }
 
 }

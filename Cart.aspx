@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="Mandar_Sankhe_BSS9_277.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="Mandar_Sankhe_BSS9_277.Cart" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +35,7 @@
                         <%-- buttons --%>
                         <div class="col-sm-12">
                             <asp:Button ID="btnContinue" PostBackUrl="~/Product.aspx" runat="server" Text="Continue Shopping" CssClass="btn btn-primary" />
-                            <asp:Button ID="btnCheckOut" OnClick="btnCheckOut_Click" runat="server" Text="Check Out" CssClass="btn btn-success" />
+                            <asp:Button ID="btnCheckOut" PostBackUrl="~/Checkout.aspx"  runat="server" Text="Check Out" CssClass="btn btn-success" />
                         </div>
                     </div>
                 </div>
