@@ -11,6 +11,33 @@
     <script src="Scripts/bootstrap.min.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Default.aspx">
+                    <img src="Images/Logo.png" width="90" height="72" />
+                </a>
+            </div>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="Product.aspx">Products</a></li>
+                    <li class="active"><a href="#">Cart</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <form id="form1" runat="server">
         <div class="container mt-5">
             <h2>Your shopping cart</h2>
@@ -28,14 +55,14 @@
                 <div class="col-sm-12">
                     <div class="form-group">
                         <%-- message label --%>
-                        <asp:Label ID="lblMessage" runat="server" EnableViewState="False"
+                        <asp:Label ID="lblMessage" runat="server" EnableViewState="false"
                             CssClass="text-info col-sm-12"></asp:Label>
                     </div>
                     <div class="form-group">
                         <%-- buttons --%>
                         <div class="col-sm-12">
                             <asp:Button ID="btnContinue" PostBackUrl="~/Product.aspx" runat="server" Text="Continue Shopping" CssClass="btn btn-primary" />
-                            <asp:Button ID="btnCheckOut" PostBackUrl="~/Checkout.aspx"  runat="server" Text="Check Out" CssClass="btn btn-success" />
+                            <asp:Button ID="btnCheckOut" PostBackUrl="~/Checkout.aspx" runat="server" Text="Check Out" CssClass="btn btn-success" />
                         </div>
                     </div>
                 </div>

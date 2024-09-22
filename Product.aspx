@@ -7,11 +7,38 @@
     <title>Ch04: Shopping Cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/site.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Default.aspx">
+                    <img src="Images/Logo.png" width="90" height="72" />
+                </a>
+            </div>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li class="active"><a href="#">Products</a></li>
+                    <li><a href="Cart.aspx">Cart</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <div class="container">
         <header class="jumbotron"><%-- image set in site.css --%></header>
         <main>
@@ -37,15 +64,18 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <asp:Label ID="lblShortDescription" runat="server"></asp:Label></div>
+                                <asp:Label ID="lblShortDescription" runat="server"></asp:Label>
+                            </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <asp:Label ID="lblLongDescription" runat="server"></asp:Label></div>
+                                <asp:Label ID="lblLongDescription" runat="server"></asp:Label>
+                            </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <asp:Label ID="lblUnitPrice" runat="server"></asp:Label></div>
+                                <asp:Label ID="lblUnitPrice" runat="server"></asp:Label>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -55,32 +85,35 @@
                 </div>
                 <%-- end of row 1 --%>
 
-            <div class="row"><%-- row 2 --%>
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label class="col-sm-1">Quantity:</label>
-                        <div class="col-sm-3">
-                            <asp:TextBox ID="txtQuantity" runat="server" 
-                                CssClass="form-control"></asp:TextBox></div>
-                        <div class="col-sm-8">
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="text-danger"
-                                runat="server" ControlToValidate="txtQuantity" Display="Dynamic" 
-                                ErrorMessage="Quantity is a required field."></asp:RequiredFieldValidator>
-                            <asp:RangeValidator ID="RangeValidator1" runat="server" CssClass="text-danger" 
-                                ControlToValidate="txtQuantity" Display="Dynamic" 
-                                ErrorMessage="Quantity must range from 1 to 500."
-                                MaximumValue="500" MinimumValue="1" Type="Integer"></asp:RangeValidator></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                            <asp:Button ID="btnAdd" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAdd_Click" />
-                            <asp:Button ID="btnCart" runat="server" Text="Go to Cart" 
-                                PostBackUrl="~/Cart.aspx" CausesValidation="False" CssClass="btn" />
+                <div class="row">
+                    <%-- row 2 --%>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="col-sm-1">Quantity:</label>
+                            <div class="col-sm-3">
+                                <asp:TextBox ID="txtQuantity" runat="server"
+                                    CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="col-sm-8">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="text-danger"
+                                    runat="server" ControlToValidate="txtQuantity" Display="Dynamic"
+                                    ErrorMessage="Quantity is a required field."></asp:RequiredFieldValidator>
+                                <asp:RangeValidator ID="RangeValidator1" runat="server" CssClass="text-danger"
+                                    ControlToValidate="txtQuantity" Display="Dynamic"
+                                    ErrorMessage="Quantity must range from 1 to 500."
+                                    MaximumValue="500" MinimumValue="1" Type="Integer"></asp:RangeValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <asp:Button ID="btnAdd" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAdd_Click" />
+                                <asp:Button ID="btnCart" runat="server" Text="Go to Cart"
+                                    PostBackUrl="~/Cart.aspx" CausesValidation="False" CssClass="btn" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><%-- end of row 2 --%>
-
+                <%-- end of row 2 --%>
             </form>
         </main>
     </div>

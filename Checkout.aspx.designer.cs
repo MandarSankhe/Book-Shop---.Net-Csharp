@@ -105,102 +105,21 @@ namespace Mandar_Sankhe_BSS9_277
         protected global::System.Web.UI.WebControls.TextBox ZipCodeTextBox;
 
         /// <summary>
-        /// NewProductsCheckBox control.
+        /// SubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox NewProductsCheckBox;
+        protected global::System.Web.UI.WebControls.Button SubmitButton;
 
         /// <summary>
-        /// SpecialOffersCheckBox control.
+        /// btnCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox SpecialOffersCheckBox;
-
-        /// <summary>
-        /// NewEditionsCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox NewEditionsCheckBox;
-
-        /// <summary>
-        /// LocalEventsCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox LocalEventsCheckBox;
-
-        /// <summary>
-        /// ContactTwitterRadioButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton ContactTwitterRadioButton;
-
-        /// <summary>
-        /// ContactFacebookRadioButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton ContactFacebookRadioButton;
-
-        /// <summary>
-        /// ContactTextRadioButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton ContactTextRadioButton;
-
-        /// <summary>
-        /// ContactEmailRadioButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton ContactEmailRadioButton;
-
-        /// <summary>
-        /// CheckOutButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CheckOutButton;
-
-        /// <summary>
-        /// CancelOrderButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CancelOrderButton;
-
-        /// <summary>
-        /// ContinueShoppingButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ContinueShoppingButton;
+        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }

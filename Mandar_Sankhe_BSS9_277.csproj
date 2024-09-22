@@ -167,13 +167,33 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\style.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Images\annefrank.jpg" />
+    <Content Include="Images\becoming.jpg" />
+    <Content Include="Images\book_thief.jpg" />
+    <Content Include="Images\educated.jpg" />
+    <Content Include="Images\gatsby.jpg" />
+    <Content Include="Images\gone_girl.jpg" />
+    <Content Include="Images\harrypotter1.jpg" />
+    <Content Include="Images\hobbit.jpg" />
+    <Content Include="Images\lefthand.jpg" />
+    <Content Include="Images\light_cannot_see.jpg" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\mandela.jpg" />
+    <Content Include="Images\me_before_you.jpg" />
+    <Content Include="Images\mockingbird.jpg" />
+    <Content Include="Images\name_of_wind.jpg" />
+    <Content Include="Images\neuromancer.jpg" />
+    <Content Include="Images\nightingale.jpg" />
+    <Content Include="Images\psiloveyou.jpg" />
+    <Content Include="Images\sapiens.jpg" />
+    <Content Include="Images\silent_patient.jpg" />
+    <Content Include="Images\stevejobs.jpg" />
+    <Content Include="Images\TheGirlwiththeDragonTattoo.jpg" />
+    <Content Include="Images\TheNotebook.jpg" />
     <Content Include="Product.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\dune.jpg" />
     <Content Include="Images\pride_prejudice.jpg" />
-    <Content Include="obj\Debug\SarthakGupta_BookStore.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\SarthakGupta_BookStore.dll" />
-    <Content Include="obj\Debug\SarthakGupta_BookStore.pdb" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe" />
@@ -275,7 +295,6 @@
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\CartItemList.cs" />
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -291,12 +310,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="obj\Debug\Mandar_Sankhe_BSS9_277.csproj.AssemblyReference.cache" />
-    <Content Include="obj\Debug\SarthakGupta_BookStore.csproj.AssemblyReference.cache" />
-    <Content Include="obj\Debug\SarthakGupta_BookStore.csproj.CopyComplete" />
-    <Content Include="obj\Debug\SarthakGupta_BookStore.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
@@ -341,7 +354,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

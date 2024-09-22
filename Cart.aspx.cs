@@ -51,8 +51,7 @@ namespace Mandar_Sankhe_BSS9_277
                 }
                 else
                 { //if no item is selected
-                    lblMessage.Text =
-                      "Please select the item to remove.";
+                    lblMessage.Text = "Please select the item to remove.";
                 }
             }
 
