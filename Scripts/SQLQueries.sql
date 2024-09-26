@@ -1,25 +1,28 @@
-﻿INSERT INTO Genre (GenreName) VALUES ('Science Fiction');
-INSERT INTO Genre (GenreName) VALUES ('Fantasy');
-INSERT INTO Genre (GenreName) VALUES ('Mystery');
-INSERT INTO Genre (GenreName) VALUES ('Romance');
-INSERT INTO Genre (GenreName) VALUES ('Horror');
-INSERT INTO Genre (GenreName) VALUES ('Biography');
-INSERT INTO Genre (GenreName) VALUES ('History');
+﻿Here are the `INSERT` queries as requested:
 
--- Science Fiction Books
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('Dune', 'Frank Herbert', 15.99, '1965-08-01', 1);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('Neuromancer', 'William Gibson', 12.99, '1984-07-01', 1);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('Foundation', 'Isaac Asimov', 14.99, '1951-06-01', 1);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('Snow Crash', 'Neal Stephenson', 13.99, '1992-06-01', 1);
-
--- Fantasy Books
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('The Hobbit', 'J.R.R. Tolkien', 10.99, '1937-09-21', 2);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('A Game of Thrones', 'George R.R. Martin', 19.99, '1996-08-06', 2);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('The Name of the Wind', 'Patrick Rothfuss', 17.99, '2007-03-27', 2);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('The Way of Kings', 'Brandon Sanderson', 18.99, '2010-08-31', 2);
-
--- Mystery Books
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('The Girl with the Dragon Tattoo', 'Stieg Larsson', 9.99, '2005-08-01', 3);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('Gone Girl', 'Gillian Flynn', 11.99, '2012-06-05', 3);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('The Da Vinci Code', 'Dan Brown', 10.99, '2003-03-18', 3);
-INSERT INTO Books (Title, Author, Price, PublishedDate, GenreID) VALUES ('In the Woods', 'Tana French', 8.99, '2007-05-17', 3);
+```sql
+INSERT INTO Book VALUES ('To Kill a Mockingbird', 'Harper Lee', 1960, 1, 15.99, 'mockingbird.jpg');
+INSERT INTO Book VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', 1925, 1, 10.50, 'gatsby.jpg');
+INSERT INTO Book VALUES ('Pride and Prejudice', 'Jane Austen', 1813, 1, 9.99, 'pride_prejudice.jpg');
+INSERT INTO Book VALUES ('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', 2011, 2, 22.00, 'sapiens.jpg');
+INSERT INTO Book VALUES ('Educated', 'Tara Westover', 2018, 2, 18.75, 'educated.jpg');
+INSERT INTO Book VALUES ('Becoming', 'Michelle Obama', 2018, 2, 19.99, 'becoming.jpg');
+INSERT INTO Book VALUES ('Dune', 'Frank Herbert', 1965, 3, 14.75, 'dune.jpg');
+INSERT INTO Book VALUES ('Neuromancer', 'William Gibson', 1984, 3, 12.50, 'neuromancer.jpg');
+INSERT INTO Book VALUES ('The Left Hand of Darkness', 'Ursula K. Le Guin', 1969, 3, 13.50, 'lefthand.jpg');
+INSERT INTO Book VALUES ('Steve Jobs', 'Walter Isaacson', 2011, 4, 24.99, 'stevejobs.jpg');
+INSERT INTO Book VALUES ('The Diary of a Young Girl', 'Anne Frank', 1947, 4, 12.00, 'annefrank.jpg');
+INSERT INTO Book VALUES ('Long Walk to Freedom', 'Nelson Mandela', 1994, 4, 18.50, 'mandela.jpg');
+INSERT INTO Book VALUES ('The Hobbit', 'J.R.R. Tolkien', 1937, 5, 18.25, 'hobbit.jpg');
+INSERT INTO Book VALUES ('Harry Potter and the Sorcerer`s Stone', 'J.K. Rowling', 1997, 5, 15.75, 'harrypotter1.jpg');
+INSERT INTO Book VALUES ('The Name of the Wind', 'Patrick Rothfuss', 2007, 5, 16.50, 'name_of_wind.jpg');
+INSERT INTO Book VALUES ('The Book Thief', 'Markus Zusak', 2005, 6, 13.99, 'book_thief.jpg');
+INSERT INTO Book VALUES ('All the Light We Cannot See', 'Anthony Doerr', 2014, 6, 16.99, 'light_cannot_see.jpg');
+INSERT INTO Book VALUES ('The Nightingale', 'Kristin Hannah', 2015, 6, 14.50, 'nightingale.jpg');
+INSERT INTO Book VALUES ('Gone Girl', 'Gillian Flynn', 2012, 7, 14.99, 'gone_girl.jpg');
+INSERT INTO Book VALUES ('The Girl with the Dragon Tattoo', 'Stieg Larsson', 2005, 7, 15.50, 'TheGirlwiththeDragonTattoo.jpg');
+INSERT INTO Book VALUES ('The Silent Patient', 'Alex Michaelides', 2019, 7, 13.25, 'silent_patient.jpg');
+INSERT INTO Book VALUES ('The Notebook', 'Nicholas Sparks', 1996, 8, 12.50, 'TheNotebook.jpg');
+INSERT INTO Book VALUES ('P.S. I Love You', 'Cecelia Ahern', 2004, 8, 10.75, 'psiloveyou.jpg');
+INSERT INTO Book VALUES ('Me Before You', 'Jojo Moyes', 2012, 8, 11.50, 'me_before_you.jpg');
+```

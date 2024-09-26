@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <title>Your Shopping Cart</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/site.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 </head>
@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="Default.aspx">
-                    <img src="Images/Logo.png" width="90" height="72" />
+                    <img src="Images/Logo.png" width="90"/>
                 </a>
             </div>
 

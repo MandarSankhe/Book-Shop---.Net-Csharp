@@ -39,10 +39,12 @@
             <div class="form-group">
                 <label for="firstName">First Name:</label>
                 <asp:TextBox ID="FirstNameTextBox" runat="server" CssClass="form-control" placeholder="Enter first name" />
+                <small id="firstNameError" class="form-text text-danger"></small>
             </div>
             <div class="form-group">
                 <label for="lastName">Last Name:</label>
                 <asp:TextBox ID="LastNameTextBox" runat="server" CssClass="form-control" placeholder="Enter last name" />
+                <small id="lastNameError" class="form-text text-danger"></small>
             </div>
             <div class="form-group">
                 <label for="phoneNumber">Phone Number:</label>
@@ -55,18 +57,20 @@
             <div class="form-group">
                 <label for="address">Address:</label>
                 <asp:TextBox ID="AddressTextBox" runat="server" CssClass="form-control" placeholder="Enter address" />
+                <small id="addressError" class="form-text text-danger"></small>
             </div>
             <div class="form-group">
                 <label for="city">City:</label>
                 <asp:TextBox ID="CityTextBox" runat="server" CssClass="form-control" placeholder="Enter city" />
+                <small id="cityError" class="form-text text-danger"></small>
             </div>
             <div class="form-group">
                 <label for="state">State:</label>
                 <asp:DropDownList ID="StateDropDown" runat="server" CssClass="form-control">
                     <asp:ListItem>Select a state</asp:ListItem>
-                    <asp:ListItem>State 1</asp:ListItem>
-                    <asp:ListItem>State 2</asp:ListItem>
-                    <asp:ListItem>State 3</asp:ListItem>
+                    <asp:ListItem>Ontario</asp:ListItem>
+                    <asp:ListItem>BC</asp:ListItem>
+                    <asp:ListItem>Quebec</asp:ListItem>
                 </asp:DropDownList>
                 <small class="form-text text-danger" id="stateError"></small>
             </div>
@@ -78,11 +82,48 @@
 
             <!-- Optional Data -->
             <h4>Optional Data</h4>
-            <!-- Optional fields unchanged -->
+
+            <p>Please let me know about:</p>
+            <div class="form-check">
+                <asp:CheckBox ID="NewProductsCheckBox" runat="server" CssClass="form-check-input" />
+                <label class="form-check-label" for="newProducts">New products</label>
+            </div>
+            <div class="form-check">
+                <asp:CheckBox ID="SpecialOffersCheckBox" runat="server" CssClass="form-check-input" />
+                <label class="form-check-label" for="specialOffers">Special offers</label>
+            </div>
+            <div class="form-check">
+                <asp:CheckBox ID="NewEditionsCheckBox" runat="server" CssClass="form-check-input" />
+                <label class="form-check-label" for="newEditions">New editions</label>
+            </div>
+            <div class="form-check">
+                <asp:CheckBox ID="LocalEventsCheckBox" runat="server" CssClass="form-check-input" />
+                <label class="form-check-label" for="localEvents">Local events</label>
+            </div>
+
+            <p>Please contact me via:</p>
+            <div class="form-check form-check-inline">
+                <asp:RadioButton ID="ContactTwitterRadioButton" runat="server" CssClass="form-check-input" GroupName="Contact" />
+                <label class="form-check-label" for="twitter">Twitter</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <asp:RadioButton ID="ContactFacebookRadioButton" runat="server" CssClass="form-check-input" GroupName="Contact" />
+                <label class="form-check-label" for="facebook">Facebook</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <asp:RadioButton ID="ContactTextRadioButton" runat="server" CssClass="form-check-input" GroupName="Contact" />
+                <label class="form-check-label" for="textMessage">Text message</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <asp:RadioButton ID="ContactEmailRadioButton" runat="server" CssClass="form-check-input" GroupName="Contact" />
+                <label class="form-check-label" for="email">Email</label>
+            </div>
+
+            <!-- Action Buttons -->
 
             <hr />
             <div class="form-group">
-                <asp:Button ID="SubmitButton" OnClientClick="return validateForm()" runat="server" CssClass="btn btn-primary" Text="Submit" />
+                <asp:Button ID="SubmitButton" OnClick="SubmitButton_Click" OnClientClick="return validateForm()" runat="server" CssClass="btn btn-primary" Text="Submit" />
                 <asp:Button ID="btnCancel" PostBackUrl="~/Cart.aspx" runat="server" Text="Cancel Order" CssClass="btn btn-danger" />
                 <asp:LinkButton runat="server" PostBackUrl="~/Product.aspx">Continue Shopping</asp:LinkButton>
             </div>
@@ -95,13 +136,18 @@
                 let errorList = '';
 
                 const email = document.getElementById('<%= EmailTextBox.ClientID %>').value;
-            const emailReentry = document.getElementById('<%= EmailReEntryTextBox.ClientID %>').value;
-            const phone = document.getElementById('<%= PhoneNumberTextBox.ClientID %>').value;
-            const state = document.getElementById('<%= StateDropDown.ClientID %>').value;
-            const zip = document.getElementById('<%= ZipCodeTextBox.ClientID %>').value;
+                const emailReentry = document.getElementById('<%= EmailReEntryTextBox.ClientID %>').value;
+                const firstName = document.getElementById('<%= FirstNameTextBox.ClientID %>').value;
+                const lastName = document.getElementById('<%= LastNameTextBox.ClientID %>').value;
+                const phone = document.getElementById('<%= PhoneNumberTextBox.ClientID %>').value;
+                const address = document.getElementById('<%= AddressTextBox.ClientID %>').value;
+                const city = document.getElementById('<%= CityTextBox.ClientID %>').value;
+                const state = document.getElementById('<%= StateDropDown.ClientID %>').value;
+                const zip = document.getElementById('<%= ZipCodeTextBox.ClientID %>').value;
 
                 // Email validation
-                if (!email.includes('@') || email !== emailReentry) {
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                if (!emailPattern.test(email) || email !== emailReentry) {
                     document.getElementById('emailError').innerText = "Emails do not match or are invalid.";
                     valid = false;
                     errorList += "<li>Emails do not match or are invalid.</li>";
@@ -109,36 +155,43 @@
                     document.getElementById('emailError').innerText = '';
                 }
 
-                // Phone validation
-                const phonePattern = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
-                if (!phonePattern.test(phone)) {
-                    document.getElementById('phoneError').innerText = "Phone number is invalid.";
+                // First Name validation
+                if (firstName.trim() === '') {
+                    document.getElementById('firstNameError').innerText = "First name is required.";
                     valid = false;
-                    errorList += "<li>Phone number is invalid. Use the format: 123-456-7890.</li>";
+                    errorList += "<li>First name is required.</li>";
                 } else {
-                    document.getElementById('phoneError').innerText = '';
+                    document.getElementById('firstNameError').innerText = '';
                 }
 
-                // State validation
-                if (state === "Select a state") {
-                    document.getElementById('stateError').innerText = "State is required.";
+                // Last Name validation
+                if (lastName.trim() === '') {
+                    document.getElementById('lastNameError').innerText = "Last name is required.";
                     valid = false;
-                    errorList += "<li>State is required.</li>";
+                    errorList += "<li>Last name is required.</li>";
                 } else {
-                    document.getElementById('stateError').innerText = '';
+                    document.getElementById('lastNameError').innerText = '';
                 }
 
-                // Zip code validation
-                const zipPattern = /^[0-9]{5}$/;
-                if (!zipPattern.test(zip)) {
-                    document.getElementById('zipError').innerText = "Zip code must be 5 digits.";
+                // Address validation
+                if (address.trim() === '') {
+                    document.getElementById('addressError').innerText = "Address is required.";
                     valid = false;
-                    errorList += "<li>Zip code must be 5 digits.</li>";
+                    errorList += "<li>Address is required.</li>";
                 } else {
-                    document.getElementById('zipError').innerText = '';
+                    document.getElementById('addressError').innerText = '';
                 }
 
-                // Display errors in batch at the top
+                // City validation
+                if (city.trim() === '') {
+                    document.getElementById('cityError').innerText = "City is required.";
+                    valid = false;
+                    errorList += "<li>City is required.</li>";
+                } else {
+                    document.getElementById('cityError').innerText = '';
+                }
+
+                // Show or hide error list
                 if (!valid) {
                     document.getElementById('errorMessages').style.display = 'block';
                     document.getElementById('errorList').innerHTML = errorList;
@@ -148,6 +201,7 @@
 
                 return valid;
             }
-    </script>
+        </script>
+
 </body>
 </html>

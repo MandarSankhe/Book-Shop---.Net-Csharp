@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="Default.aspx">
-                    <img src="Images/Logo.png" width="90" height="72" />
+                    <img src="Images/Logo.png" width="90" />
                 </a>
             </div>
 

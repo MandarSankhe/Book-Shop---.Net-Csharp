@@ -13,5 +13,14 @@ namespace Mandar_Sankhe_BSS9_277
         {
 
         }
+
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                // Redirect to the Thank You page after successful validation
+                Response.Redirect("~/Thankyou.aspx");
+            }
+        }
     }
 }
