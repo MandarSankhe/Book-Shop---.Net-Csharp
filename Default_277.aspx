@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Mandar_Sankhe_BSS9_277.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default_277.aspx.cs" Inherits="Mandar_Sankhe_BSS9_277.Default_277" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,9 +29,9 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="Home.aspx">Home</a></li>
-                    <li><a href="Product.aspx">Products</a></li>
-                    <li><a href="Cart.aspx">Cart</a></li>
+                    <li class="active"><a href="#">BSS9Home</a></li>
+                    <li><a href="Product.aspx">BSS9Products</a></li>
+                    <li><a href="Cart.aspx">BSS9Cart</a></li>
                 </ul>
             </div>
         </div>

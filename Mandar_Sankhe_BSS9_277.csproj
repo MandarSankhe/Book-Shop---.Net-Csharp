@@ -166,7 +166,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\style.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Default_277.aspx" />
     <Content Include="Images\annefrank.jpg" />
     <Content Include="Images\becoming.jpg" />
     <Content Include="Images\book_thief.jpg" />
@@ -261,6 +261,7 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\SQLQueries.sql" />
+    <Content Include="ThankYou.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -278,12 +279,12 @@
     <Compile Include="Checkout.aspx.designer.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default_277.aspx.cs">
+      <DependentUpon>Default_277.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default_277.aspx.designer.cs">
+      <DependentUpon>Default_277.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
@@ -292,10 +293,17 @@
     <Compile Include="Product.aspx.designer.cs">
       <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\MyBook.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\CartItemList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThankYou.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />

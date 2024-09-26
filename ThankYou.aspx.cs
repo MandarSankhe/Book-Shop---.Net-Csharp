@@ -7,10 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace Mandar_Sankhe_BSS9_277
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class ThankYou : System.Web.UI.Page
     {
+        private CartItemList cart;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (cart!=null || cart.Count > 0)
+            {
+                cart.Clear();
+            }
 
         }
     }

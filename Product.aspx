@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="Default.aspx">
+                <a class="navbar-brand" href="Default_277.aspx">
                     <img src="Images/Logo.png" width="90" />
                 </a>
             </div>
@@ -30,9 +30,9 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="Default.aspx">Home</a></li>
-                    <li class="active"><a href="#">Products</a></li>
-                    <li><a href="Cart.aspx">Cart</a></li>
+                    <li><a href="Default_277.aspx">BSS9Home</a></li>
+                    <li class="active"><a href="#">BSS9Products</a></li>
+                    <li><a href="Cart.aspx">BSS9Cart</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -98,10 +98,10 @@
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="text-danger"
                                     runat="server" ControlToValidate="txtQuantity" Display="Dynamic"
                                     ErrorMessage="Quantity is a required field."></asp:RequiredFieldValidator>
-                                <asp:RangeValidator ID="RangeValidator1" runat="server" CssClass="text-danger"
+                                <asp:RangeValidator ID="RangeValidator1" runat="server" CssClass="text-success"
                                     ControlToValidate="txtQuantity" Display="Dynamic"
-                                    ErrorMessage="Quantity must range from 1 to 500."
-                                    MaximumValue="500" MinimumValue="1" Type="Integer"></asp:RangeValidator>
+                                    ErrorMessage="Quantity must range from 7 to 100."
+                                    MaximumValue="100" MinimumValue="7" Type="Integer"></asp:RangeValidator>
                             </div>
                         </div>
                         <div class="form-group">

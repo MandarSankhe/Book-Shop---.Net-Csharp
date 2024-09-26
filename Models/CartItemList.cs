@@ -41,7 +41,7 @@ public class CartItemList
         return (CartItemList)HttpContext.Current.Session["Cart"];
     }
 
-    public void AddItem(Book book, int quantity)
+    public void AddItem(MyBook book, int quantity)
     {
         CartItem c = new CartItem(book, quantity);
         cartItems.Add(c);

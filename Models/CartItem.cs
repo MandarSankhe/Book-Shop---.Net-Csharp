@@ -7,13 +7,13 @@ public class CartItem
 {
     public CartItem() { }
 
-    public CartItem(Book book, int quantity)
+    public CartItem(MyBook book, int quantity)
     {
         this.Book = book;
         this.Quantity = quantity;
     }
 
-    public Book Book { get; set; }
+    public MyBook Book { get; set; }
     public int Quantity { get; set; }
 
     public void AddQuantity(int quantity)

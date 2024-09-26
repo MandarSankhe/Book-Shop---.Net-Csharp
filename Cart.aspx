@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="Default.aspx">
+                <a class="navbar-brand" href="Default_277.aspx">
                     <img src="Images/Logo.png" width="90"/>
                 </a>
             </div>
@@ -29,9 +29,9 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="Default.aspx">Home</a></li>
-                    <li><a href="Product.aspx">Products</a></li>
-                    <li class="active"><a href="#">Cart</a></li>
+                    <li><a href="Default_277.aspx">BSS9Home</a></li>
+                    <li><a href="Product.aspx">BSS9Products</a></li>
+                    <li class="active"><a href="#">BSS9Cart</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -62,7 +62,7 @@
                         <%-- buttons --%>
                         <div class="col-sm-12">
                             <asp:Button ID="btnContinue" PostBackUrl="~/Product.aspx" runat="server" Text="Continue Shopping" CssClass="btn btn-primary" />
-                            <asp:Button ID="btnCheckOut" PostBackUrl="~/Checkout.aspx" runat="server" Text="Check Out" CssClass="btn btn-success" />
+                            <asp:Button ID="btnCheckOut" PostBackUrl="~/Checkout.aspx" runat="server" Text="My Check Out" CssClass="btn btn-success" />
                         </div>
                     </div>
                 </div>

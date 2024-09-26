@@ -10,7 +10,7 @@ namespace Mandar_Sankhe_BSS9_277
 {
     public partial class Products : System.Web.UI.Page
     {
-        private Book selectedProduct;
+        private MyBook selectedProduct;
         protected void Page_Load(object sender, EventArgs e)
         {
             //1-if the page didn't post back(first time to use it)
@@ -33,7 +33,7 @@ namespace Mandar_Sankhe_BSS9_277
         }
 
 
-        protected Book GetSelectedProduct()
+        protected MyBook GetSelectedProduct()
         {
             //Create DataView to retrieve selected records 
             // A DataView enables you to create different views of the data stored in a DataTable,
@@ -49,7 +49,7 @@ namespace Mandar_Sankhe_BSS9_277
             DataRowView row = productsTable[0];
             // -- -----------------------------------------------------
             //Createt Object from product
-            Book p = new Book();
+            MyBook p = new MyBook();
             //Get Product ID from row
             p.BookID = Convert.ToInt32(row["BookID"].ToString());
             //Get Product Name

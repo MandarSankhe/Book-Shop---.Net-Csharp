@@ -123,7 +123,7 @@
 
             <hr />
             <div class="form-group">
-                <asp:Button ID="SubmitButton" OnClick="SubmitButton_Click" OnClientClick="return validateForm()" runat="server" CssClass="btn btn-primary" Text="Submit" />
+                <asp:Button ID="SubmitButton" OnClick="SubmitButton_Click" OnClientClick="return validateForm()" runat="server" CssClass="btn btn-primary" Text="Place Order" />
                 <asp:Button ID="btnCancel" PostBackUrl="~/Cart.aspx" runat="server" Text="Cancel Order" CssClass="btn btn-danger" />
                 <asp:LinkButton runat="server" PostBackUrl="~/Product.aspx">Continue Shopping</asp:LinkButton>
             </div>
