@@ -12,10 +12,12 @@ namespace Mandar_Sankhe_BSS9_277
         private CartItemList cart;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (cart!=null || cart.Count > 0)
-            {
-                cart.Clear();
-            }
+            Session["Cart"] = null; 
+            
+            //art!=null || cart.Count > 0)
+            
+              //  cart.Clear();
+            //}
 
         }
     }
