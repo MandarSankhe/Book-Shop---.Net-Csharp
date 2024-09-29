@@ -1,4 +1,6 @@
-﻿using System;
+﻿//277_Mandar
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -25,8 +27,8 @@ namespace Mandar_Sankhe_BSS9_277
 
             //3- Display the data 
             lblName.Text = selectedProduct.Title;
-            lblShortDescription.Text = selectedProduct.Author;
-            lblLongDescription.Text = selectedProduct.PublicationYear.ToString();
+            lblAuthor.Text = selectedProduct.Author;
+            lblYearPublished.Text = selectedProduct.PublicationYear.ToString();
             lblUnitPrice.Text = selectedProduct.Price.ToString("c") + " each";
             imgBook.ImageUrl = selectedProduct.ImageFile;
 

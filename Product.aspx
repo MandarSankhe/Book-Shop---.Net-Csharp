@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Ch04: Shopping Cart</title>
+    <title>Bookstore: Shop Books</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="Default_277.aspx">
-                    <img src="Images/Logo.png" width="90" />
+                    <img src="Images/Logo.png" width="93" />
                 </a>
             </div>
 
@@ -40,7 +40,7 @@
         <!-- /.container-fluid -->
     </nav>
     <div class="container">
-        <header class="jumbotron"><%-- image set in site.css --%></header>
+        <header class="jumbotron text-center bgbanner"><h2>Browse our Books</h2></header>
         <main>
             <form id="form1" runat="server" class="form-horizontal">
 
@@ -49,7 +49,7 @@
                     <div class="col-sm-8">
                         <%-- product drop down and info column --%>
                         <div class="form-group">
-                            <label class="col-sm-5">Please select a product:</label>
+                            <label class="col-sm-4">Please select a Book:</label>
                             <div class="col-sm-6">
                                 <asp:DropDownList ID="ddlBooks" DataSourceID="SqlDataSource1" DataTextField="Title" AutoPostBack="True" DataValueField="BookID" runat="server" CssClass="form-control">
                                 </asp:DropDownList>
@@ -59,22 +59,22 @@
                         <div class="form-group">
                             <div class="col-sm-12">
                                 <h4>
-                                    <asp:Label ID="lblName" runat="server"></asp:Label></h4>
+                                    <b><span>Book Title: </span></b><asp:Label ID="lblName" runat="server"></asp:Label></h4>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <asp:Label ID="lblShortDescription" runat="server"></asp:Label>
+                                <b><span>Author Name: </span></b><asp:Label ID="lblAuthor" runat="server"></asp:Label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <asp:Label ID="lblLongDescription" runat="server"></asp:Label>
+                                <b><span>Year Published: </span></b><asp:Label ID="lblYearPublished" runat="server"></asp:Label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <asp:Label ID="lblUnitPrice" runat="server"></asp:Label>
+                                <b><span>Price: </span></b><asp:Label ID="lblUnitPrice" runat="server"></asp:Label>
                             </div>
                         </div>
                     </div>

@@ -51,22 +51,22 @@ namespace Mandar_Sankhe_BSS9_277
         protected global::System.Web.UI.WebControls.Label lblName;
 
         /// <summary>
-        /// lblShortDescription control.
+        /// lblAuthor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblShortDescription;
+        protected global::System.Web.UI.WebControls.Label lblAuthor;
 
         /// <summary>
-        /// lblLongDescription control.
+        /// lblYearPublished control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLongDescription;
+        protected global::System.Web.UI.WebControls.Label lblYearPublished;
 
         /// <summary>
         /// lblUnitPrice control.

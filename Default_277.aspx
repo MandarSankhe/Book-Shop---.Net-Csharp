@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="Images/Logo.png" width="90" />
+                    <img src="Images/Logo.png" width="93" />
                 </a>
             </div>
 
@@ -39,9 +39,9 @@
 
     <form id="form1" runat="server">
         <div class="container mt-5">
-            <div class="jumbotron text-center">
+            <div class="jumbotron text-center homebanner">
                 <h1>Welcome to Our BookStore!</h1>
-                <p>Discover a wide collection of books, from bestsellers to classics, and everything in between.</p>
+                <p><b>Discover a wide collection of books, from bestsellers to classics, and everything in between.</b></p>
                 <asp:Button ID="btnBrowseBooks" PostBackUrl="~/Product.aspx" runat="server" Text="Browse Books" CssClass="btn btn-success btn-lg" />
             </div>
             <div class="row">

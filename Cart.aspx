@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="Default_277.aspx">
-                    <img src="Images/Logo.png" width="90"/>
+                    <img src="Images/Logo.png" width="93"/>
                 </a>
             </div>
 
@@ -46,8 +46,8 @@
                     <asp:ListBox ID="lstCart" runat="server" CssClass="form-control" Height="150px"></asp:ListBox>
                 </div>
                 <div class="col-md-4">
-                    <asp:Button ID="RemoveItemButton" OnClick="btnRemove_Click" runat="server" Text="Remove Item" CssClass="btn btn-danger mb-2 btn-block" />
-                    <asp:Button ID="EmptyCartButton" OnClick="btnEmpty_Click" runat="server" Text="Empty Cart" CssClass="btn btn-warning mb-2 btn-block" />
+                    <asp:Button ID="RemoveItemButton" OnClick="btnRemove_Click" runat="server" Text="Remove Item" CssClass="btn btn-warning mb-2 btn-block" />
+                    <asp:Button ID="EmptyCartButton" OnClick="btnEmpty_Click" runat="server" Text="Empty Cart" CssClass="btn btn-danger mb-2 btn-block" />
                 </div>
             </div>
             <div class="row">
@@ -61,8 +61,8 @@
                     <div class="form-group">
                         <%-- buttons --%>
                         <div class="col-sm-12">
-                            <asp:Button ID="btnContinue" PostBackUrl="~/Product.aspx" runat="server" Text="Continue Shopping" CssClass="btn btn-primary" />
-                            <asp:Button ID="btnCheckOut" PostBackUrl="~/Checkout.aspx" runat="server" Text="My Check Out" CssClass="btn btn-success" />
+                            <asp:Button ID="btnContinue" PostBackUrl="~/Product.aspx" runat="server" Text="Continue Shopping" CssClass="btn btn-info" />
+                            <asp:Button ID="btnCheckOut" OnClick="btnCheckOut_Click" runat="server" Text="My Check Out" CssClass="btn btn-success" />
                         </div>
                     </div>
                 </div>

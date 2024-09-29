@@ -13,13 +13,12 @@
 </head>
 <body>
     <nav class="navbar navbar-default">
-        <!-- Navbar code unchanged -->
     </nav>
 
     <form id="form1" runat="server">
         <div class="container text-center">
-            <header class="jumbotron text-center"><h1>Thank You for your Purchase</h1></header>
-            <asp:LinkButton runat="server" PostBackUrl="~/Default_277.aspx">Go to Home page</asp:LinkButton>
+            <header class="jumbotron text-center bgbanner"><h1>Thank You for your Purchase</h1></header>
+            <asp:LinkButton PostBackUrl="~/Default_277.aspx" runat="server">Go to Home page</asp:LinkButton>
         </div>
     </form>
 

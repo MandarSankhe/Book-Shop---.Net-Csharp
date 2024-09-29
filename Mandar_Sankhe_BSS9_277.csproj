@@ -169,12 +169,14 @@
     <Content Include="Default_277.aspx" />
     <Content Include="Images\annefrank.jpg" />
     <Content Include="Images\becoming.jpg" />
+    <Content Include="Images\bgBanner.jpg" />
     <Content Include="Images\book_thief.jpg" />
     <Content Include="Images\educated.jpg" />
     <Content Include="Images\gatsby.jpg" />
     <Content Include="Images\gone_girl.jpg" />
     <Content Include="Images\harrypotter1.jpg" />
     <Content Include="Images\hobbit.jpg" />
+    <Content Include="Images\homebanner.jpg" />
     <Content Include="Images\lefthand.jpg" />
     <Content Include="Images\light_cannot_see.jpg" />
     <Content Include="Images\Logo.png" />

@@ -1,4 +1,6 @@
-﻿using System;
+﻿//277_Mandar
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -70,6 +72,18 @@ namespace Mandar_Sankhe_BSS9_277
 
         }
 
+        protected void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            //Redirect to checkout page only if cart is not empty
+            if (cart.Count > 0)
+            {
+                Response.Redirect("~/Checkout.aspx");
+            }
+            else
+            {
+                lblMessage.Text = "Cart is Empty";
+            }
+        }
     }
 
 }
