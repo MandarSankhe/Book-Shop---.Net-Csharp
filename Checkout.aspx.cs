@@ -22,7 +22,7 @@ namespace Mandar_Sankhe_BSS9_277
             if (Page.IsValid)
             {
                 // Redirect to the Thank You page after successful validation
-                Response.Redirect("~/Thankyou.aspx");
+                Response.Redirect("~/Thankyou");
             }
         }
     }

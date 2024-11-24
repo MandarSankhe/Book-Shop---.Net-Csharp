@@ -11,61 +11,79 @@ namespace Mandar_Sankhe_BSS9_277
 {
 
 
-    public partial class Cart
+    public partial class MyLogin_277
     {
 
         /// <summary>
-        /// lstCart control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstCart;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// RemoveItemButton control.
+        /// TxtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RemoveItemButton;
+        protected global::System.Web.UI.WebControls.TextBox TxtFirstName;
 
         /// <summary>
-        /// EmptyCartButton control.
+        /// ReqFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EmptyCartButton;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqFirstName;
 
         /// <summary>
-        /// lblMessage control.
+        /// TxtLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
+        protected global::System.Web.UI.WebControls.TextBox TxtLastName;
 
         /// <summary>
-        /// btnContinue control.
+        /// ReqLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnContinue;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqLastName;
 
         /// <summary>
-        /// btnCheckOut control.
+        /// BtnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCheckOut;
+        protected global::System.Web.UI.WebControls.Button BtnLogin;
+
+        /// <summary>
+        /// BtnCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnCancel;
+
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
     }
 }

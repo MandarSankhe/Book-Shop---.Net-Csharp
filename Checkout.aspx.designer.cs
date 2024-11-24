@@ -15,13 +15,13 @@ namespace Mandar_Sankhe_BSS9_277
     {
 
         /// <summary>
-        /// form1 control.
+        /// ValidationSummary1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
 
         /// <summary>
         /// EmailTextBox control.
@@ -33,6 +33,24 @@ namespace Mandar_Sankhe_BSS9_277
         protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
 
         /// <summary>
+        /// EMailRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EMailRequired;
+
+        /// <summary>
+        /// EmailValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator EmailValidator;
+
+        /// <summary>
         /// EmailReEntryTextBox control.
         /// </summary>
         /// <remarks>
@@ -40,6 +58,15 @@ namespace Mandar_Sankhe_BSS9_277
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox EmailReEntryTextBox;
+
+        /// <summary>
+        /// EmailReEntryValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator EmailReEntryValidator;
 
         /// <summary>
         /// FirstNameTextBox control.
@@ -51,6 +78,15 @@ namespace Mandar_Sankhe_BSS9_277
         protected global::System.Web.UI.WebControls.TextBox FirstNameTextBox;
 
         /// <summary>
+        /// FirstNameRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FirstNameRequired;
+
+        /// <summary>
         /// LastNameTextBox control.
         /// </summary>
         /// <remarks>
@@ -58,6 +94,15 @@ namespace Mandar_Sankhe_BSS9_277
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
+
+        /// <summary>
+        /// LastNameRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator LastNameRequired;
 
         /// <summary>
         /// PhoneNumberTextBox control.
@@ -69,6 +114,24 @@ namespace Mandar_Sankhe_BSS9_277
         protected global::System.Web.UI.WebControls.TextBox PhoneNumberTextBox;
 
         /// <summary>
+        /// PhoneNumberRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PhoneNumberRequired;
+
+        /// <summary>
+        /// PhoneValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator PhoneValidator;
+
+        /// <summary>
         /// AddressTextBox control.
         /// </summary>
         /// <remarks>
@@ -76,6 +139,15 @@ namespace Mandar_Sankhe_BSS9_277
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox AddressTextBox;
+
+        /// <summary>
+        /// AddressRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator AddressRequired;
 
         /// <summary>
         /// CityTextBox control.
@@ -87,6 +159,15 @@ namespace Mandar_Sankhe_BSS9_277
         protected global::System.Web.UI.WebControls.TextBox CityTextBox;
 
         /// <summary>
+        /// CityRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CityRequired;
+
+        /// <summary>
         /// StateDropDown control.
         /// </summary>
         /// <remarks>
@@ -94,6 +175,15 @@ namespace Mandar_Sankhe_BSS9_277
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList StateDropDown;
+
+        /// <summary>
+        /// StateRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator StateRequired;
 
         /// <summary>
         /// ZipCodeTextBox control.
@@ -105,6 +195,24 @@ namespace Mandar_Sankhe_BSS9_277
         protected global::System.Web.UI.WebControls.TextBox ZipCodeTextBox;
 
         /// <summary>
+        /// ZipRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ZipRequired;
+
+        /// <summary>
+        /// ZipValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ZipValidator;
+
+        /// <summary>
         /// NewProductsCheckBox control.
         /// </summary>
         /// <remarks>
@@ -114,15 +222,6 @@ namespace Mandar_Sankhe_BSS9_277
         protected global::System.Web.UI.WebControls.CheckBox NewProductsCheckBox;
 
         /// <summary>
-        /// SpecialOffersCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox SpecialOffersCheckBox;
-
-        /// <summary>
         /// NewEditionsCheckBox control.
         /// </summary>
         /// <remarks>
@@ -130,6 +229,15 @@ namespace Mandar_Sankhe_BSS9_277
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox NewEditionsCheckBox;
+
+        /// <summary>
+        /// SpecialOffersCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox SpecialOffersCheckBox;
 
         /// <summary>
         /// LocalEventsCheckBox control.

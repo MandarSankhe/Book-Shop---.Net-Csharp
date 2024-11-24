@@ -1,82 +1,38 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default_277.aspx.cs" Inherits="Mandar_Sankhe_BSS9_277.Default_277" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site_0277.Master" AutoEventWireup="true" CodeBehind="Default_277.aspx.cs" Inherits="Mandar_Sankhe_BSS9_277.Default_277" %>
 
-<!DOCTYPE html>
-<html lang="en">
-<head runat="server">
-    <meta charset="utf-8" />
-    <title>Welcome to BookStore</title>
 
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/style.css" rel="stylesheet" />
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-</head>
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="Images/Logo.png" width="93" />
-                </a>
-            </div>
+<asp:Content ContentPlaceHolderID="Maincontent" runat="server">
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">BSS9Home</a></li>
-                    <li><a href="Product.aspx">BSS9Products</a></li>
-                    <li><a href="Cart.aspx">BSS9Cart</a></li>
-                </ul>
-            </div>
+    <div class="container mt-5">
+        <div class="jumbotron text-center homebanner">
+            <h1><span id="spnUsername" runat="server"></span></h1>
+            <p><b>Discover a wide collection of books, from bestsellers to classics, and everything in between.</b></p>
+            <asp:Button ID="btnBrowseBooks" PostBackUrl="~/Product" runat="server" Text="Browse Books" CssClass="btn btn-success btn-lg" />
         </div>
-    </nav>
 
-    <form id="form1" runat="server">
-        <div class="container mt-5">
-            <div class="jumbotron text-center homebanner">
-                <h1>Welcome to Our BookStore!</h1>
-                <p><b>Discover a wide collection of books, from bestsellers to classics, and everything in between.</b></p>
-                <asp:Button ID="btnBrowseBooks" PostBackUrl="~/Product.aspx" runat="server" Text="Browse Books" CssClass="btn btn-success btn-lg" />
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="Images/harrypotter1.jpg" alt="Books" class="img-responsive" />
-                        <div class="caption">
-                            <h3>Popular Books</h3>
-                            <p>Find the best-selling and most popular books of all time.</p>
-                            <p><a href="Product.aspx" class="btn btn-primary" role="button">View Products</a></p>
+        <div class="row mt-4">
+            <h3>Our Collection: </h3>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT [BookID], [Title], [Author], [PublicationYear], [GenreID], [Price], [ImageFile] FROM [TheBooks_80277] ORDER BY [PublicationYear]"></asp:SqlDataSource>
+            <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+                <ItemTemplate>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href='/Product/<%# Eval("BookID") %>'>
+                                <img src="/Images/<%# Eval("ImageFile") %>" />
+                            </a>
+                            <div class="caption">
+                                <h4 class="text-limit"><%# Eval("Title") %></h4>
+                                <p><b>Price:<%# Eval("Price") %></b></p>
+                                <br />
+                                <br />
+                                <%# Eval("Author") %>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="Images/silent_patient.jpg" alt="New Arrivals" class="img-responsive" />
-                        <div class="caption">
-                            <h3>New Arrivals</h3>
-                            <p>Check out the latest arrivals at our bookstore.</p>
-                            <p><a href="Product.aspx" class="btn btn-primary" role="button">View Products</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="Images/dune.jpg" alt="Discounts" class="img-responsive" />
-                        <div class="caption">
-                            <h3>Discount Offers</h3>
-                            <p>Don't miss out on special deals and offers on various books.</p>
-                            <p><a href="Product.aspx" class="btn btn-primary" role="button">View Products</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
-    </form>
-</body>
-</html>
+    </div>
+
+
+</asp:Content>

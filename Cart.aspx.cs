@@ -77,7 +77,7 @@ namespace Mandar_Sankhe_BSS9_277
             //Redirect to checkout page only if cart is not empty
             if (cart.Count > 0)
             {
-                Response.Redirect("~/Checkout.aspx");
+                Response.Redirect("~/Checkout");
             }
             else
             {

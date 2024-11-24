@@ -11,124 +11,133 @@ namespace Mandar_Sankhe_BSS9_277
 {
 
 
-    public partial class Products
+    public partial class The_Admin_Sec9
     {
 
         /// <summary>
-        /// spnUsername control.
+        /// DropDownListGenres_277 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spnUsername;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListGenres_277;
 
         /// <summary>
-        /// ddlBooks control.
+        /// DataListBooks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlBooks;
+        protected global::System.Web.UI.WebControls.DataList DataListBooks;
 
         /// <summary>
-        /// SqlDataSource1 control.
+        /// GridViewGenres_277 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.GridView GridViewGenres_277;
 
         /// <summary>
-        /// lblName control.
+        /// TextBoxGenreID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxGenreID;
 
         /// <summary>
-        /// lblAuthor control.
+        /// TextBoxGenreName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAuthor;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxGenreName;
 
         /// <summary>
-        /// lblYearPublished control.
+        /// TextBoxLongName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblYearPublished;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxLongName;
 
         /// <summary>
-        /// lblUnitPrice control.
+        /// ButtonAddGenre_77 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUnitPrice;
+        protected global::System.Web.UI.WebControls.Button ButtonAddGenre_77;
 
         /// <summary>
-        /// imgBook control.
+        /// LabelGenreError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgBook;
+        protected global::System.Web.UI.WebControls.Label LabelGenreError;
 
         /// <summary>
-        /// txtQuantity control.
+        /// GridViewBooks_277 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtQuantity;
+        protected global::System.Web.UI.WebControls.GridView GridViewBooks_277;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// DetailsViewBooks_277 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.DetailsView DetailsViewBooks_277;
 
         /// <summary>
-        /// RangeValidator1 control.
+        /// SqlDataSourceBooks_0277 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceBooks_0277;
 
         /// <summary>
-        /// btnAdd control.
+        /// SqlDataSourceBooksWithGenres_0277 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceBooksWithGenres_0277;
 
         /// <summary>
-        /// btnCart control.
+        /// SqlDataSourceBooksCRUD_0277 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCart;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceBooksCRUD_0277;
+
+        /// <summary>
+        /// SqlDataSourceGenresCRUD_0277 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceGenresCRUD_0277;
     }
 }
