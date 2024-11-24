@@ -42,7 +42,7 @@
                         <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price", "{0:C}") %>' />
                     </td>
                     <td class="col-xs-3">
-                        <asp:Label ID="PublicationYearLabel" runat="server" Text='<%# Eval("PublicationYear") %>' />
+                        <asp:Label ID="OnHandLabel" runat="server" Text='<%# Eval("OnHand") %>' />
                     </td>
                 </tr>
             </ItemTemplate>
@@ -137,7 +137,7 @@
                         <asp:BoundField DataField="BookID" HeaderText="Book ID" ReadOnly="True" />
                         <asp:BoundField DataField="Title" HeaderText="Name" />
                         <asp:BoundField DataField="Author" HeaderText="Author" />
-                        <asp:BoundField DataField="PublicationYear" HeaderText="On Hand" />
+                        <asp:BoundField DataField="OnHand" HeaderText="On Hand" />
                         <asp:TemplateField HeaderText="Genre">
                             <EditItemTemplate>
                                 <asp:DropDownList ID="DropDownListGenre" runat="server" DataSourceID="SqlDataSourceGenresCRUD_0277"
@@ -179,10 +179,10 @@
     <!-- SqlDataSource for CRUD on books -->
     <asp:SqlDataSource ID="SqlDataSourceBooksCRUD_0277" runat="server"
         ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-        SelectCommand="SELECT B.BookID, B.Title, B.Author, B.PublicationYear, B.Price, B.ImageFile, G.GenreName, B.GenreID FROM TheBooks_80277 B
+        SelectCommand="SELECT B.BookID, B.Title, B.Author, B.OnHand, B.Price, B.ImageFile, G.GenreName, B.GenreID FROM TheBooks_80277 B
             INNER JOIN Genre G ON B.GenreID = G.GenreID WHERE B.BookID = @BookID"
-        InsertCommand="INSERT INTO TheBooks_80277 (Title, Author, PublicationYear, GenreID, Price, ImageFile) VALUES (@Title, @Author, @PublicationYear, @GenreID, @Price, @ImageFile)"
-        UpdateCommand="UPDATE TheBooks_80277 SET Title = @Title, Author = @Author, PublicationYear = @PublicationYear, GenreID = @GenreID, Price = @Price, ImageFile = @ImageFile WHERE BookID = @BookID"
+        InsertCommand="INSERT INTO TheBooks_80277 (Title, Author, OnHand, GenreID, Price, ImageFile) VALUES (@Title, @Author, @OnHand, @GenreID, @Price, @ImageFile)"
+        UpdateCommand="UPDATE TheBooks_80277 SET Title = @Title, Author = @Author, OnHand = @OnHand, GenreID = @GenreID, Price = @Price, ImageFile = @ImageFile WHERE BookID = @BookID"
         DeleteCommand="DELETE FROM TheBooks_80277 WHERE BookID = @BookID">
         <SelectParameters>
             <asp:ControlParameter ControlID="GridViewBooks_277" PropertyName="SelectedValue" Name="BookID" Type="Int32" />
@@ -190,7 +190,7 @@
         <InsertParameters>
             <asp:Parameter Name="Title" Type="String" />
             <asp:Parameter Name="Author" Type="String" />
-            <asp:Parameter Name="PublicationYear" Type="Int32" />
+            <asp:Parameter Name="OnHand" Type="Int32" />
             <asp:Parameter Name="GenreID" Type="Int32" />
             <asp:Parameter Name="Price" Type="Decimal" />
             <asp:Parameter Name="ImageFile" Type="String" />
@@ -198,7 +198,7 @@
         <UpdateParameters>
             <asp:Parameter Name="Title" Type="String" />
             <asp:Parameter Name="Author" Type="String" />
-            <asp:Parameter Name="PublicationYear" Type="Int32" />
+            <asp:Parameter Name="OnHand" Type="Int32" />
             <asp:Parameter Name="GenreID" Type="Int32" />
             <asp:Parameter Name="Price" Type="Decimal" />
             <asp:Parameter Name="ImageFile" Type="String" />
